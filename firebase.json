@@ -1,0 +1,11 @@
+{
+  "functions": { "source": "functions" },
+  "hosting": {
+    "public": "public",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      { "source": "/api/admin/**", "function": { "functionId": "adminGiftApi", "region": "asia-northeast1" } }
+    ]
+  },
+  "firestore": { "rules": "firestore.rules" }
+}
